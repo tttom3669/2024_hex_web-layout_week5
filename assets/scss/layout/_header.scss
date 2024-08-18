@@ -1,0 +1,28 @@
+.header {
+  // flex: 0 0 23.125%;
+  width: 296px;
+}
+
+.nav {
+  &,
+  &__link {
+    display: flex;
+  }
+  align-items: start;
+  flex-direction: column;
+  gap: 24px;
+
+  &__link {
+    text-decoration: none;
+    align-items: center;
+    font-weight: 700;
+    gap: 16px;
+    color: map-get($map: $theme-colors, $key: gray-2);
+    transition: all 0.3s;
+    &.active,
+    &:hover,
+    &:active {
+      color: map-get($map: $theme-colors, $key: primary);
+    }
+  }
+}

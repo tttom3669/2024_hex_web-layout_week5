@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>index</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <div class="d-flex">
+    <%- include('./layout/header'); -%>
+      <div class="flex-fill">
+        <div class="container">
+          <div class="py-8 mx-auto d-flex align-items-center justify-content-between ">
+            <div class="d-flex align-items-center gap-12.5">
+              <h1 class="fw-bold fs-6">Assignment</h1>
+              <div class="dropdown">
+                <button class="btn btn-link text-gray-2 fw-bold text-decoration-none d-flex align-items-center gap-2"
+                  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  All Courses
+                  <span class="material-symbols-outlined text-primary">
+                    expand_more
+                  </span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-6">
+              <a href="#" class="material-icon-link  ">
+                <span class="material-symbols-outlined">
+                  search
+                </span>
+              </a>
+              <a href="#" class="material-icon-link  ">
+                <span class="material-symbols-outlined">
+                  notifications_active
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="dropdown mb-1.5">
+              <!-- data-bs-toggle="dropdown" -->
+              <button class="btn btn-link p-0 text-gray-2 fw-bold text-decoration-none d-flex align-items-center gap-2"
+                type="button" aria-expanded="false">
+                All (4)
+                <span class="material-symbols-outlined text-primary">
+                  expand_more
+                </span>
+              </button>
+            </div>
+            <!-- <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul> -->
+            <p class="text-gray-3 fs-3">2 comments</p>
+          </div>
+
+          <div class="d-flex gap-4">
+            <div class="min-w-24.7">
+              <div class="list-group fs-3">
+                <a href="#" class="list-group-item bg-gray-1 text-gray-2 list-group-item-action p-3"
+                  aria-current="true">
+                  <div class="d-flex w-100 justify-content-between mb-1">
+                    <h5 class="fs-3 ">Chapter Assignment 2</h5>
+                    <small>4 hrs ago</small>
+                  </div>
+                  <div class="d-flex w-100 justify-content-between align-items-center">
+                    <p class="fs-base fw-bold">Please check this file….</p>
+                    <small class="text-gray-3">Emily Wang</small>
+                  </div>
+                </a>
+                <a href="#" class="list-group-item text-gray-2 list-group-item-action p-3" aria-current="true">
+                  <div class="d-flex w-100 justify-content-between mb-1">
+                    <h5 class="fs-3 ">Chapter Assignment 1</h5>
+                    <small>12 hrs ago</small>
+                  </div>
+                  <div class="d-flex w-100 justify-content-between align-items-center">
+                    <p class="fs-base fw-bold">My Homework</p>
+                    <small class="text-gray-3">David Xu</small>
+                  </div>
+                </a>
+                <a href="#" class="list-group-item text-gray-2 list-group-item-action p-3" aria-current="true">
+                  <div class="d-flex w-100 justify-content-between mb-1">
+                    <h5 class="fs-3 ">Final Assignment</h5>
+                    <small>18 hrs ago</small>
+                  </div>
+                  <div class="d-flex w-100 justify-content-between align-items-center">
+                    <p class="fs-base fw-bold">Have a problem with this…</p>
+                    <small class="text-gray-3">Tony Wei</small>
+                  </div>
+                </a>
+                <a href="#" class="list-group-item text-gray-2 list-group-item-action p-3" aria-current="true">
+                  <div class="d-flex w-100 justify-content-between mb-1">
+                    <h5 class="fs-3 ">Final Assignment</h5>
+                    <small>19 hrs ago</small>
+                  </div>
+                  <div class="d-flex w-100 justify-content-between align-items-center">
+                    <p class="fs-base fw-bold">Did I do it right?</p>
+                    <small class="text-gray-3">Christina Lin</small>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="flex-fill position-relative">
+              <div class="card mb-4">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                  <div class="d-flex flex-column text-gray-2">
+                    <h2 class="fs-3"> Chapter Assignment 2 / HTML&CSS</h2>
+                    <p class="fs-base fw-bold">
+                      Please check this file for me, thanks!</p>
+                  </div>
+                  <a href="#">
+                    <span class="material-symbols-outlined text-gray-2">
+                      more_vert
+                    </span>
+                  </a>
+                </div>
+                <div class="card-body p-0">
+                  <div class="p-4">
+                    <div class="user mb-4">
+                      <div class="user__img">
+                        <img
+                          src="https://github.com/hexschool/2022-web-layout-training/blob/main/week5/emilywang.jpeg?raw=true"
+                          alt="user" />
+                      </div>
+                      <div class="border-bottom border-gray-4 pb-4">
+                        <p class="user__title">Emily Wang</p>
+                        <p class="user__mail fs-3">10:38 AM (4 hours ago)</p>
+                        <p class="text-gray-2 mb-4">Hi Teacher, the attached file is my homework of chapter 2. And here
+                          comes
+                          a question: Why in the following code the height of the div is bigger than the height of the
+                          img ? There is a gap below the image, but it doesn’t seems to be a padding/margin.<br /> What
+                          is the
+                          gap or extra space below image?</p>
+                        <button type="button"
+                          class="btn d-flex gap-2 align-items-center px-3 py-2 text-gray-2 fs-base fw-bold rounded-2px bg-gray-1 border-gray-4">
+                          <span class="material-symbols-outlined">
+                            attach_file
+                          </span>
+                          HW-2-David.zip
+                        </button>
+                      </div>
+                    </div>
+                    <div class="user ">
+                      <div class="user__img">
+                        <img
+                          src="https://github.com/hexschool/2022-web-layout-training/blob/main/week5/andychen.jpeg?raw=true"
+                          alt="user" />
+                      </div>
+                      <div>
+                        <div class="d-flex justify-content-between">
+                          <div>
+                            <p class="user__title">Andy Chen (You)</p>
+                            <p class="user__mail fs-3">13:24 AM (1 hours ago)</p>
+                          </div>
+                          <div class="d-flex align-items-center gap-6">
+                            <button type="button" class="btn bg-white border-0 p-0">
+                              <span class="material-symbols-outlined material-symbols-outlined-not-fill">
+                                star_rate
+                              </span>
+                            </button>
+                            <button type="button" class="btn bg-white border-0 p-0">
+                              <span class="material-symbols-outlined">
+                                edit
+                              </span>
+                            </button>
+                          </div>
+                        </div>
+                        <p class="text-gray-2">Hi David, by default, an image is rendered inline, like a letter so
+                          it sits on the same line that a, b, c and d sit on. There is space below that line for the
+                          descenders you find on letters like g, j, p and q.<br /><br /> You can: <br /><br />　• adjust
+                          the
+                          vertical-align of
+                          the image to position it elsewhere (e.g. the middle ) or<br /> 　• change the display so it
+                          isn’t
+                          inline.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between">
+                <div class="d-flex gap-6 align-items-center ">
+                  <button type="button" class="btn bg-white border-0 p-0">
+                    <span class="material-symbols-outlined material-symbols-outlined-not-fill">
+                      chevron_left
+                    </span>
+                  </button>
+                  <button type="button" class="btn bg-white border-0 p-0">
+                    <span class="material-symbols-outlined">
+                      chevron_right
+                    </span>
+                  </button>
+                </div>
+                <div class="d-flex gap-4 align-items-center">
+                  <button type="button" class="btn btn-outline-primary text-primary py-2 px-8 hover:text-white"> Mark as
+                    read</button>
+                  <button type="button" class="btn btn-primary text-white py-2 px-8" data-bs-toggle="collapse"
+                    data-bs-target="#CollapseModal"> Reply</button>
+
+                  <div class="collapse position-absolute bottom-0 end-0 w-100" id="CollapseModal">
+                    <div class="card card-body p-0  border border-gray-4">
+                      <div class="d-flex flex-column">
+                        <div class="d-flex gap-6 align-items-center  bg-gray-1 border-bottom border-gray-4 py-4 px-6">
+                          <div class="d-flex align-items-center gap-2">
+                            <span class="fw-bold">Body Text</span>
+                            <button type="button" class="btn bg-transparent p-0"><span
+                                class="material-symbols-outlined">
+                                arrow_drop_down
+                              </span></button>
+                          </div>
+                          <button type="button" class="btn bg-transparent p-0"><span class="material-symbols-outlined">
+                              format_bold
+                            </span></button>
+                          <button type="button" class="btn bg-transparent p-0"><span class="material-symbols-outlined">
+                              format_italic
+                            </span></button>
+                          <button type="button" class="btn bg-transparent p-0"><span class="material-symbols-outlined">
+                              list
+                            </span></button>
+                          <button type="button" class="btn bg-transparent p-0"><span class="material-symbols-outlined">
+                              format_list_numbered
+                            </span></button>
+                          <button type="button" class="btn bg-transparent p-0"><span class="material-symbols-outlined">
+                              image
+                            </span></button>
+                          <button type="button" class="btn bg-transparent p-0"><span class="material-symbols-outlined">
+                              code
+                            </span></button>
+                          <button type="button" class="btn bg-transparent p-0"><span class="material-symbols-outlined">
+                              link
+                            </span></button>
+                        </div>
+                        <form action="">
+                          <textarea name="" id="" placeholder="Reply an answer…" style="min-height: 196px;"
+                            class="form-control border-0 pt-4 ps-6"></textarea>
+                        </form>
+                        <div class="d-flex gap-1.5 align-items-center justify-content-end pb-4 pe-6">
+                          <button type="button" class="btn btn-outline-primary text-primary py-2 px-8 hover:text-white"
+                            data-bs-toggle="collapse" data-bs-target="#CollapseModal">
+                            Cancel</button>
+                          <button type="button" class="btn btn-primary text-white py-2 px-8"> Reply</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+  <script type="module" src="../main.js"></script>
+</body>
+
+</html>

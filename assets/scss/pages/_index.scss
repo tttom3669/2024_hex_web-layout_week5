@@ -1,0 +1,53 @@
+.index-title {
+  font-size: 100px;
+}
+
+.user {
+  margin-top: auto;
+  display: flex;
+  align-items: start;
+  gap: 16px;
+  &__img {
+    flex: 0 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      display: block;
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    color: map-get($map: $theme-colors, $key: gray-2);
+    margin-bottom: 4px;
+  }
+  &__mail {
+    font-size: 14px;
+    color: map-get($map: $theme-colors, $key: gray-3);
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+.material-symbols-outlined-not-fill {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+.material-icon-link {
+  color: map-get($map: $theme-colors, $key: gray-2);
+  text-decoration: none;
+  .material-symbols-outlined {
+    color: currentColor;
+  }
+  &:hover {
+    color: $primary;
+  }
+}
+
+.btn.hover\:text-white {
+  &:hover {
+    color: white !important;
+  }
+}
